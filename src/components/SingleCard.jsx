@@ -6,7 +6,7 @@ import "./style.scss";
 
 export const SingleCard = ({ car }) => (
   <Card className="Single-card">
-    <Carousel interval={false} indicators={false}>
+    <Carousel interval={false}>
       {car.nuotraukos.map((image, ind) => (
         <Carousel.Item key={ind} className="Carousel-item">
           <img className="d-block w-100" src={image} alt={`${ind} slide`} />
